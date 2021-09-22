@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>No-nav page....</h1>
+  <div class="container">
+    <h1 class="my-5">My Rentals....</h1>
     <MyItem v-for="item in myRentals" :key="item.id" :item="item" />
   </div>
 </template>
@@ -9,7 +9,7 @@
 import { mapState } from 'vuex'
 
 export default {
-  layout: 'no-nav',
+  // layout: 'no-nav',
   computed: {
     ...mapState(['myRentals']),
   },

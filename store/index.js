@@ -222,6 +222,7 @@ export const state = () => ({
 
 export const getters = {
   // state is passed by automatically by Vuex
+  // this is to return a function
   getProductByID: (state) => (payload) => {
     return state.products.find((product) => product.id == payload)
   },
